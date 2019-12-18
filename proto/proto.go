@@ -246,6 +246,31 @@ func Headers(payload []byte) []byte {
 	return payload[:MIMEHeadersEndPos(payload)]
 }
 
+// Code return response code
+func Code(payload []byte) []byte {
+	start := bytes.IndexByte(payload, ' ') + 1
+	eol := bytes.IndexByte(payload[start:], '\r')
+	end := bytes.IndexByte(payload[start:], ' ')
+
+	if eol > 0 {
+		if end == -1 || eol < end {
+			return payload[start : start+eol]
+		}
+	} else { // support for legacy clients
+		eol = bytes.IndexByte(payload[start:], '\n')
+
+		if eol > 0 && (end == -1 || eol < end) {
+			return payload[start : start+eol]
+		}
+	}
+
+	if end < 0 {
+		return payload[start:]
+	}
+
+	return payload[start : start+end]
+}
+
 // SetHeader sets header value. If header not found it creates new one.
 // Returns modified request payload
 func SetHeader(payload, name, value []byte) []byte {
