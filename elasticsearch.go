@@ -8,7 +8,7 @@ import (
 	//"regexp"
 	"time"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 
 	"github.com/mattbaird/elastigo/lib"
 )

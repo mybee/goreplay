@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/buger/gor.svg?maxAge=3600)](https://github.com/buger/goreplay/releases) [![codebeat](https://codebeat.co/badges/6427d589-a78e-416c-a546-d299b4089893)](https://codebeat.co/projects/github-com-buger-gor) [![Go Report Card](https://goreportcard.com/badge/github.com/buger/gor)](https://goreportcard.com/report/github.com/buger/gor) [![Join the chat at https://gitter.im/buger/gor](https://badges.gitter.im/buger/gor.svg)](https://gitter.im/buger/gor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![GitHub release](https://img.shields.io/github/release/mybee/gor.svg?maxAge=3600)](https://github.com/mybee/goreplay/releases) [![codebeat](https://codebeat.co/badges/6427d589-a78e-416c-a546-d299b4089893)](https://codebeat.co/projects/github-com-mybee-gor) [![Go Report Card](https://goreportcard.com/badge/github.com/mybee/gor)](https://goreportcard.com/report/github.com/mybee/gor) [![Join the chat at https://gitter.im/mybee/gor](https://badges.gitter.im/mybee/gor.svg)](https://gitter.im/mybee/gor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 ![Go Replay](http://i.imgur.com/ZG2ki5n.png)
 
@@ -17,17 +17,17 @@ GoReplay offers unique approach for shadowing. Instead of being a proxy, GoRepla
 
 ![Diagram](https://i.imgur.com/IN2xfDm.png)
 
-Check [latest documentation](http://github.com/buger/goreplay/wiki).
+Check [latest documentation](http://github.com/mybee/goreplay/wiki).
 
 ## Installation
-Download latest binary from https://github.com/buger/goreplay/releases or [compile by yourself](https://github.com/buger/goreplay/wiki/Compilation).
+Download latest binary from https://github.com/mybee/goreplay/releases or [compile by yourself](https://github.com/mybee/goreplay/wiki/Compilation).
 
 ## Getting started
 
 The most basic setup will be `sudo ./gor --input-raw :8000 --output-stdout` which acts like tcpdump.
 If you already have test environment you can start replaying: `sudo ./gor --input-raw :8000 --output-http http://staging.env`.
 
-See the our [documentation](https://github.com/buger/goreplay/wiki/) and [Getting started](https://github.com/buger/goreplay/wiki/Getting-Started) page for more info. 
+See the our [documentation](https://github.com/mybee/goreplay/wiki/) and [Getting started](https://github.com/mybee/goreplay/wiki/Getting-Started) page for more info. 
 
 ## Newsletter
 Subscribe to our [newsletter](https://www.getdrip.com/forms/89690474/submissions/new) to stay informed about the latest features and changes to Gor project.
@@ -39,7 +39,7 @@ We have created a [GoReplay PRO](https://goreplay.org/pro.html) extension which 
 
 
 ## Problems?
-If you have a problem, please review the [FAQ](https://github.com/buger/goreplay/wiki/FAQ) and [Troubleshooting](https://github.com/buger/goreplay/wiki/Troubleshooting) wiki pages. Searching the [issues](https://github.com/buger/goreplay/issues) for your problem is also a good idea.
+If you have a problem, please review the [FAQ](https://github.com/mybee/goreplay/wiki/FAQ) and [Troubleshooting](https://github.com/mybee/goreplay/wiki/Troubleshooting) wiki pages. Searching the [issues](https://github.com/mybee/goreplay/issues) for your problem is also a good idea.
 
 All bug-reports and suggestions should go through Github Issues or our [Google Group](https://groups.google.com/forum/#!forum/gor-users) (you can just send email to gor-users@googlegroups.com).
 If you have a private question feel free to send email to support@gortool.com.
@@ -70,4 +70,4 @@ If you are using Gor, we are happy to add you to the list and share your story, 
 
 ## Author
 
-Leonid Bugaev, [@buger](https://twitter.com/buger), https://leonsbox.com
+Leonid Bugaev, [@mybee](https://twitter.com/mybee), https://leonsbox.com

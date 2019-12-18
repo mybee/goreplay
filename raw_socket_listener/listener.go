@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
@@ -255,7 +255,7 @@ func (e *DeviceNotFoundError) Error() string {
 	devices, _ := pcap.FindAllDevs()
 
 	if len(devices) == 0 {
-		return "Can't get list of network interfaces, ensure that you running Gor as root user or sudo.\nTo run as non-root users see this docs https://github.com/buger/goreplay/wiki/Running-as-non-root-user"
+		return "Can't get list of network interfaces, ensure that you running Gor as root user or sudo.\nTo run as non-root users see this docs https://github.com/mybee/goreplay/wiki/Running-as-non-root-user"
 	}
 
 	var msg string
@@ -741,7 +741,7 @@ func (t *Listener) processTCPPacket(packet *TCPPacket) {
 	// Seek for 100-expect chunks
 	// `packet.Ack != parentAck` is protection for clients who send data without ignoring server 100-continue response, e.g have data chunks have same Ack
 	if parentAck, ok := t.seqWithData[packet.Seq]; ok && packet.Ack != parentAck {
-		// Skip zero-length chunks https://github.com/buger/goreplay/issues/496
+		// Skip zero-length chunks https://github.com/mybee/goreplay/issues/496
 		if len(packet.Data) == 0 {
 			return
 		}

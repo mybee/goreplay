@@ -12,8 +12,8 @@ base: core18
 parts:
   goreplay:
     plugin: go
-    source: https://github.com/buger/goreplay.git
-    go-importpath: github.com/buger/goreplay
+    source: https://github.com/mybee/goreplay.git
+    go-importpath: github.com/mybee/goreplay
     build-packages:
       - build-essential
       - libpcap-dev

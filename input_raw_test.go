@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 )
 
 const testRawExpire = time.Millisecond * 200

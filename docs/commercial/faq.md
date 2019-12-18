@@ -8,7 +8,7 @@ There's no free trial but we do offer a 14 day period with full refund if it doe
 
 ### What is the license?
 
-See [COMM-LICENSE](https://github.com/buger/gor/blob/master/COMM-LICENSE) in the root of the GoReplay repo.
+See [COMM-LICENSE](https://github.com/mybee/gor/blob/master/COMM-LICENSE) in the root of the GoReplay repo.
 
 ### How does PRO licensing work?
 

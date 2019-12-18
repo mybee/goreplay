@@ -130,7 +130,7 @@ func InitPlugins() {
 	}
 
 	// If we explicitly set Host header http output should not rewrite it
-	// Fix: https://github.com/buger/gor/issues/174
+	// Fix: https://github.com/mybee/gor/issues/174
 	for _, header := range Settings.modifierConfig.headers {
 		if header.Name == "Host" {
 			Settings.outputHTTPConfig.OriginalHost = true

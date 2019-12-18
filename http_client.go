@@ -18,7 +18,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 )
 
 var httpMu sync.Mutex

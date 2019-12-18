@@ -6,14 +6,14 @@ Listener works by sniffing traffic from a given port. It's accessible
 only by using sudo or root access. But it is possible to [[Running as non root user]].
 
 ### How do you deal with user session to replay the traffic correctly?
-You can rewrite session related headers/params to match your staging environment. If you require custom logic (e.g random token based auth) follow this discussion: https://github.com/buger/gor/issues/154
+You can rewrite session related headers/params to match your staging environment. If you require custom logic (e.g random token based auth) follow this discussion: https://github.com/mybee/gor/issues/154
 
 ### Can I use Gor to intercept SSL traffic?
 Basic idea is that SSL was made to protect itself from traffic interception. There 2 options: 
 1. Move SSL handling to proxy like Nginx or Amazon ELB. And allow Gor to listen on upstreams. 
 2. Use `--input-http` so you can duplicate request payload directly from your app to Gor, but it will require your app modifications.
 
-More can be find here: https://github.com/buger/gor/issues/85
+More can be find here: https://github.com/mybee/gor/issues/85
 
 ### Is there a limit for size of HTTP request when using output-http?
 Due to the fact that Gor can't guarantee interception of all packets, for large payloads > 200kb there is chance of missing some packets and corrupting body. Treat it as a feature and chance to test broken bodies handling :)

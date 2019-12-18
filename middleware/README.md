@@ -1,6 +1,6 @@
 # GoReplay middleware
 
-GoReplay support protocol for writing middleware in any language, which allows you to implement custom logic like authentification or complex rewriting and filterting. See protocol description here: https://github.com/buger/goreplay/wiki/Middleware, but the basic idea that middleware process receive hex encoded data via STDIN and emits it back via STDOUT. STDERR for loggin inside middleware. Yes, that's simple.
+GoReplay support protocol for writing middleware in any language, which allows you to implement custom logic like authentification or complex rewriting and filterting. See protocol description here: https://github.com/mybee/goreplay/wiki/Middleware, but the basic idea that middleware process receive hex encoded data via STDIN and emits it back via STDOUT. STDERR for loggin inside middleware. Yes, that's simple.
 
 To simplify middleware creation we provide packages for NodeJS and Go (upcoming).
 

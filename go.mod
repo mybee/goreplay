@@ -1,4 +1,4 @@
-module github.com/buger/goreplay
+module github.com/mybee/goreplay
 
 go 1.12
 

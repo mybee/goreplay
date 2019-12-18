@@ -19,10 +19,10 @@ mkdir $HOME/gocode
 # See more information about GOPATH https://github.com/golang/go/wiki/GOPATH
 export GOPATH=$HOME/gocode
 # Fetch code from the Github
-go get github.com/buger/gor
+go get github.com/mybee/gor
 
 # Compile from source
-cd $HOME/gocode/src/github.com/buger/gor
+cd $HOME/gocode/src/github.com/mybee/gor
 go build LDFLAGS = -ldflags "-extldflags \"-static\""
 ```
 

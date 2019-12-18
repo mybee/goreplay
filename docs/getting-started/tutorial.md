@@ -2,7 +2,7 @@
 To start working with Gor, you need to have a web server running on your machine, and a terminal to run commands. If you are just poking around, you can quickly start the server by calling `gor file-server :8000`, this will start a simple file server of the current directory on port `8000`. 
 
 ### Installing Gor
-Download the latest Gor binary from https://github.com/buger/gor/releases (we provide precompiled binaries for Windows, Linux x64 and Mac OS), or you can compile by yourself [[Compilation]].
+Download the latest Gor binary from https://github.com/mybee/gor/releases (we provide precompiled binaries for Windows, Linux x64 and Mac OS), or you can compile by yourself [[Compilation]].
 
 Once the archive is downloaded and uncompressed, you can run Gor from the current directory, or you may want to copy binary to your PATH (for Linux and Mac OS it can be `/usr/local/bin`).
 

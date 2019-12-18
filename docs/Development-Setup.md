@@ -6,7 +6,7 @@ https://docs.docker.com/engine/getstarted/step_one/#step-3-verify-your-installat
 
 ## STEP 2: Download repository
 
-`git clone git@github.com:buger/goreplay.git`
+`git clone git@github.com:mybee/goreplay.git`
 
 
 ## STEP 3: Setup container
@@ -27,7 +27,7 @@ make test
 You can copy the command that is produced and modify it. For example, if you need to run one test copy the command and add `-run TestName`, e.g.:
 
 ```
-docker run -v `pwd`:/go/src/github.com/buger/gor/ -p 0.0.0.0:8000:8000 -t -i gor:go go test ./. -run TestEmitterFiltered -timeout 60s -ldflags "-X main.VERSION=DEV-1482398347 -extldflags \"-static\""   -v
+docker run -v `pwd`:/go/src/github.com/mybee/gor/ -p 0.0.0.0:8000:8000 -t -i gor:go go test ./. -run TestEmitterFiltered -timeout 60s -ldflags "-X main.VERSION=DEV-1482398347 -extldflags \"-static\""   -v
 ```
 
 

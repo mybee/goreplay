@@ -9,7 +9,7 @@ Read for more info:
 * [[[PRO] Replaying Binary protocols]]
 * [[[PRO] Recording and replaying keep alive TCP sessions]]
 * [[Saving and Replaying from file]]
-* [Performance testing](https://github.com/buger/gor/wiki/Saving-and-Replaying-from-file#performance-testing)
+* [Performance testing](https://github.com/mybee/gor/wiki/Saving-and-Replaying-from-file#performance-testing)
 * [[Rate limiting]]
 * [[Request filtering]]
 * [[Request rewriting]]

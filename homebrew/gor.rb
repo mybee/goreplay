@@ -3,9 +3,9 @@ require "language/go"
 class Gor < Formula
   desc "Real-time HTTP traffic replay tool written in Go"
   homepage "https://gortool.com"
-  url "https://github.com/buger/gor/archive/v0.14.0.tar.gz"
+  url "https://github.com/mybee/gor/archive/v0.14.0.tar.gz"
   sha256 "62260a6f5cabde571b91d5762fba9c47691643df0a58565cbe808854cd064dc8"
-  head "https://github.com/buger/gor.git"
+  head "https://github.com/mybee/gor.git"
 
   bottle do
     cellar :any_skip_relocation
@@ -21,8 +21,8 @@ class Gor < Formula
       :revision => "d0e59c22a56e8dadfed24f74f452cea5a52722d2"
   end
 
-  go_resource "github.com/buger/elastigo" do
-    url "https://github.com/buger/elastigo.git",
+  go_resource "github.com/mybee/elastigo" do
+    url "https://github.com/mybee/elastigo.git",
       :revision => "23fcfd9db0d8be2189a98fdab77a4c90fcc3a1e9"
   end
 
@@ -33,8 +33,8 @@ class Gor < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    mkdir_p buildpath/"src/github.com/buger/"
-    ln_sf buildpath, buildpath/"src/github.com/buger/gor"
+    mkdir_p buildpath/"src/github.com/mybee/"
+    ln_sf buildpath, buildpath/"src/github.com/mybee/gor"
     Language::Go.stage_deps resources, buildpath/"src"
 
     system "go", "build", "-o", "#{bin}/gor", "-ldflags", "-X main.VERSION \"#{version}\""

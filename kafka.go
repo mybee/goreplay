@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 
 	"github.com/Shopify/sarama"
 )

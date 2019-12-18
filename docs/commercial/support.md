@@ -8,4 +8,4 @@ More aggressive support contracts (phone, quicker response time) are available s
 
 ## Onboarding
 
-Enterprise customers may request a one hour video chat session with @buger to discuss their application(s), requirements and how best to leverage the various Gor features.  Contact support to set up your session.
+Enterprise customers may request a one hour video chat session with @mybee to discuss their application(s), requirements and how best to leverage the various Gor features.  Contact support to set up your session.

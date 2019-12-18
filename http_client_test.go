@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buger/goreplay/proto"
+	"github.com/mybee/goreplay/proto"
 )
 
 func TestHTTPClientURLPort(t *testing.T) {
@@ -139,7 +139,7 @@ func TestHTTPClientResonseByClose(t *testing.T) {
 	wg.Wait()
 }
 
-// https://github.com/buger/gor/issues/184
+// https://github.com/mybee/gor/issues/184
 func TestHTTPClientResponseBuffer(t *testing.T) {
 	testCases := []struct {
 		name         string
