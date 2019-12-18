@@ -236,6 +236,16 @@ func Header(payload, name []byte) []byte {
 	return val
 }
 
+// Headers returns request/response body
+func Headers(payload []byte) []byte {
+	// 4 -> len(EMPTY_LINE)
+	if len(payload) < 4 {
+		return []byte{}
+	}
+
+	return payload[:MIMEHeadersEndPos(payload)]
+}
+
 // SetHeader sets header value. If header not found it creates new one.
 // Returns modified request payload
 func SetHeader(payload, name, value []byte) []byte {
